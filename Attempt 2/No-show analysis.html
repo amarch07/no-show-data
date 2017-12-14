@@ -1,0 +1,46 @@
+Data Analyst Evaluation
+
+1. I decided to analyze the No-Show Appointments Data. 
+
+2. Questions pre-data analysis:
+ 
+	1. What does this population of patients look like from a diagnosis (i.e. Diabetes, Alcoholism...)
+	2. Overall, what was the percentage of patients who missed their visit?
+	    2a. Did gender or age correlate with no-shows?
+	3. Were their certain appointment days where the number of no-shows were greter than others?
+	4. How did the time between when the patient scheduled their appointment and have their appointment
+	   correlate with no-shows?
+
+3.
+
+4. I imported the csv excel file using two methods: unicodecsv and through pandas pd.read()
+
+
+5. Summary and answering above posed questions:
+
+	1. Patients with a defined diagnosis of Alcoholism, Diabetes, Handicap, and Hypertension were looked at. No-shows and 
+	   those on scholarship (which I'm assuming is government assistance of some sort) were also evaluated. Hypertension had the 
+	   greatest % of patients, but all of these categories fell under %20 of the total patient population.
+
+	2. %20 of patients missed their appointment
+	2a. The ratio of no-show/shows per age was explored. Those over age 50 appeared to make their appointments more 
+	    than those younger than 50. After age 80, however, the ratio range was inconsistent. This may be to those over 
+	    the age of 80 possibly relying on others for transportation to their appointments, poor memory, or illness that 
+	    prevented them from leaving their home. Those under the age of legal driving age may have also been impacted by
+	    being dependent on others to get them to their appointment.
+	
+	    65% of those who missed their appointment were females. However, there were several more females that had scheduled
+	    appointments than males. When looking strictly at female total and female no-show numbers, 20% of females missed their
+	    visits and 19% of males missed their appointments. It was important in this case to break down
+	    women and men to truly see if this impacted chances they would no-show or if these numbers were due to females having
+	    a higher total than males.
+
+	3.  There was one week (last week of May) where the ratio between no-shows and visits made was higher. This could be due to several
+	    factors. Weather or festivities taking place in the patient's community/neighborhoods could have caused this. It would be
+	    interesting to see % of appointments made during the last week in May per neighborhood.
+
+	4.  This was difficult for me to assess. I was able to group the necessary data together, but struggled with cleaning it up and comparing
+	    these to reach a more definitive conclusion to this answer. I did find it easier when I converted the waitinDays from timedelta[ns] to days.
+
+
+Resources: GitHub, Stack Overflow, communication with my mentor, Krystal
